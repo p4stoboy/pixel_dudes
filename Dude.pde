@@ -53,7 +53,7 @@ class Dude{
           the_state = 0;
         }
         cells[x][y] = new Block(this, the_state, x, y, block_size);
-        if(x != (num_blocks-1)/2){
+        if(x != (num_blocks-1)/2.00){
           cells[num_blocks-1-x][y] = new Block(this, cells[x][y].state, num_blocks-1-x, y, block_size);
         }
       }
